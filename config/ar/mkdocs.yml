@@ -1,0 +1,58 @@
+site_name: API الاستعلام الجمركي
+docs_dir: '../../docs/ar'                           
+site_dir: '../../site/ar' 
+theme:
+  name: material
+  language: ar
+  logo: assets/Vector.png
+  theme:
+  features:
+    - navigation.expand
+  palette:
+    - scheme: default
+      primary: white
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: dark mode
+
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: light mode  
+extra_css:
+  - stylesheets/extra.css
+nav:
+    - مقدمة: index.md
+    - دليل البدء السريع: 
+      - كيفية المصادقة على API: quickStart/howToAuthenticate.md
+      - كيفية استخدام العرض التوضيحي لواجهة برمجة التطبيقات: quickStart/howToConsult.md
+    - توثيق:
+      - الكتابة والتنسيق: documentation/typesFormat.md
+      - رموز الإرجاع: documentation/returnCode.md
+    - واجهات برمجة تطبيقات الاستعلام:
+      - الجمارك EasyTrade: apis/easytradeCustoms.md
+      - شريك: apis/associate.md
+    - يدعم:
+      - اتصال: contact/support.md
+plugins:
+   - swagger-ui-tag
+   - search
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >-     
+      نحن نستخدم ملفات تعريف الارتباط للتعرف على زياراتك المتكررة وتفضيلاتك أيضًا
+       لقياس فعالية وثائقنا وما إذا كان المستخدمون
+       يجدون ما يبحثون عنه. بموافقتك ، أنت تساعدنا على ذلك
+       اجعل وثائقنا أفضل.
+
+  alternate:   
+
+    - name: Portuguese
+      link: /pt/
+      lang: pt
+
+    - name: Arabic
+      link: /ar/
+      lang: ar
